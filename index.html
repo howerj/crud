@@ -1,0 +1,43 @@
+<!DOCTYPE html><html>
+<head>
+	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SIMPLE QUERY AND LOGGING SYSTEM</title>
+	<style type="text/css">body{margin:40px auto;max-width:650px;line-height:1.6;font-size:18px;color:#444;padding:0 10px}h1,h2,h3{line-height:1.2}</style>
+</head>
+	<body>
+		<h1>This is a simple query engine and logging system</h1>
+
+		<p>In order to use this system you should either send a
+		request to "/query" or to "/set". Use "?id=abc" with
+		"/query" and "?id=abc&amp;data=123" with "/set" to set
+		a value. Any one can set a value, to query the data you
+		should need authorization (either provided by the server.py
+		script or an NGINX reverse proxy).</p>
+
+		<!-- TODO: delete values, list all values, show web-log -->
+		<!--
+		<p><a href="/query?id=abc">CLICK HERE TO RUN AN EXAMPLE QUERY</a></p>
+		<p><a href="/set?id=abc&data=123">CLICK HERE TO SET A VALUE</a></p>
+		-->
+
+		<p>
+			RUN A QUERY:
+			<form action="/query">
+				<label for="id">Unit ID:</label>
+				<input type="text" id="id" name="id" value="abc">
+				<input type="submit" value="Submit">
+			</form>
+		</p>
+		<p>
+			SET A VALUE:
+			<form action="/set">
+				<label for="id">Unit ID:</label>
+				<input type="text" id="id" name="id" value="abc"><br>
+				<label for="data">Data:</label>
+				<input type="text" id="data" name="data" value="123"><br>
+				<input type="submit" value="Submit">
+			</form>
+		</p>
+	</body>
+</html>
+
