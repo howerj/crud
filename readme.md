@@ -1,11 +1,11 @@
 # Basic CRUD Web app server thingy
 
 * Author: Richard James Howe
-* License: Proprietary
+* License: MIT
 * Email: howe.r.j.89@gmail.com
+* Repo: https://github.com/howerj/crud
 
-Work in progress.
-
-This is a python application to create a webserver that will accept URLs
+This is a python application to create a web-server that will accept URLs
 containing data from anywhere, and only allow certain users access to query the
-database results.
+database results. It is a working application, but it is meant more as a
+skeleton to use for other applications.

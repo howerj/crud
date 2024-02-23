@@ -14,30 +14,33 @@
 		should need authorization (either provided by the server.py
 		script or an NGINX reverse proxy).</p>
 
-		<!-- TODO: delete values, list all values, show web-log -->
 		<!--
 		<p><a href="/query?id=abc">CLICK HERE TO RUN AN EXAMPLE QUERY</a></p>
 		<p><a href="/set?id=abc&data=123">CLICK HERE TO SET A VALUE</a></p>
 		-->
 
-		<p>
-			RUN A QUERY:
-			<form action="/query">
-				<label for="id">Unit ID:</label>
-				<input type="text" id="id" name="id" value="abc">
-				<input type="submit" value="Submit">
-			</form>
-		</p>
-		<p>
-			SET A VALUE:
-			<form action="/set">
-				<label for="id">Unit ID:</label>
-				<input type="text" id="id" name="id" value="abc"><br>
-				<label for="data">Data:</label>
-				<input type="text" id="data" name="data" value="123"><br>
-				<input type="submit" value="Submit">
-			</form>
-		</p>
+		<p>RUN A QUERY:
+		<form action="/query">
+			<label for="id">Unit ID:</label>
+			<input type="text" id="id" name="id" value="abc">
+			<input type="submit" value="Submit">
+		</form>
+		<p>SET A VALUE:
+		<form action="/set">
+			<label for="id">Unit ID:</label>
+			<input type="text" id="id" name="id" value="abc"><br>
+			<label for="data">Data:</label>
+			<input type="text" id="data" name="data" value="123"><br>
+			<input type="submit" value="Submit">
+		</form>
+		<p>VIEW ALL DATABASE ITEMS:
+		<form action="/all">
+			<input type="submit" value="Submit">
+		</form>
+		<p>VIEW WEB LOGS:
+		<form action="/logs">
+			<input type="submit" value="Submit">
+		</form>
 	</body>
 </html>
 
